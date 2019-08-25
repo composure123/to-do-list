@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>to do list</title>
+		
+		<!-- 连接到外部文件log_in.css,jss1.js -->
+	<link rel="stylesheet" type="text/css" href="css/log_in.css" >
+	<script type="text/javascript"  scr= "js/jss1.js"></script>
+		
+		
+	</head>
+	
+	<body>
+		<!-- align 设置标签内的内容的对齐方式，center居中对齐 -->
+	<div align="center">
+		
+		<br /><br /><br />
+		<h2>欢迎使用to do list...</h2>
+		<button type="button" onclick="document.getElementById('id01').style.display='block'" style="width:50%;">登录</button>
+		<br /><br /><br />
+		
+	</div>		
+
+	
+<div id="id01" class="modal">
+	  
+	
+	<!-- action="index.html",用于单击登录（submit）按钮，跳转到index.html页面 -->
+	<form class="modal-content animate" action="index.html">
+		
+	<div class="imgcontainer">
+	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    <!-- 图片来自于网页 -->
+		  <img src="https://static.runoob.com/images/mix/img_avatar.png" alt="Avatar" class="avatar">
+	    
+	</div>
+	
+<div class="container">
+	      <label><b>Username</b></label>
+	      <input type="text" placeholder="请输入用户名" name="uname" required>
+	
+	      <label><b>Password</b></label>
+	      <input type="password" placeholder="请输入密码" name="psw" required>
+	        
+			<!-- submit提交按钮 -->
+			
+	      <!-- <button type="submit">登陆</button> -->
+		<div id="id02" class=""> 
+		 <!-- onclick鼠标单击按钮触发事件 -->
+	<!-- /*----点击此按钮，因为<form>开头设置了action="index.html"，会跳转到index.html页面-------*/ -->
+		  <button type="submit"  >登录</button>
+
+
+	    </div>
+
+		  <!-- /*-----------------------------------------------------*/ -->
+	      <input type="checkbox" checked="checked" > <b>记住我</b>
+	</div>
+	
+	
+	<!-- 点击cancel退出页面 -->
+	<div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      <span class="psw">Forgot <a href="#">password?</a></span>
+	</div>
+	
+	</form>
+</div>
+
+
+		
+		
+	</body>
+</html>
